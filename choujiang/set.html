@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>群主福利预约</title>
+    <link rel="stylesheet" href="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+       <link rel="stylesheet" href="layui/css/layui.css">
+    
+      
+    <script src="js/jquery-1.9.1.min.js" type="text/javascript"></script>
+<script src="layer/layer.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="css/my.css">
+</head>
+ 
+
+<body>
+    <div class="indexbg">
+<div class="guize">
+    规<br>则
+</div>
+
+
+   <div class="cont" >
+       <div class="settitle">
+
+<p>你正在参与</p>
+<p>10月天天签到金满贯体验</p>
+       </div>
+
+       <div class="contimg">
+           <div>
+               <img src="images/shangpin3x.png" alt=""></div>
+
+           <div class="shopcon" style="margin: 30px 0;">
+
+               <div class="shopcon-spc1">
+                   仅高级群主特邀的用户
+                   <br>可参与签到31天即可获</div>
+               <div class="shopcon2" style="margin:auto;"><p class="shopcon-spc">得</p>特级五常大米1袋</div>
+
+           </div>
+       </div>
+<div class="adds" style="">
+    <div class="yuyue">
+    <span class="dpn"> 马上报名预约</span>
+    <span class="dpn">预约成功，去设置提醒</span>
+    <span> 马上去签到</span>
+    </div>
+<div>
+
+</div>
+</div>
+
+
+
+
+
+
+   </div>
+ 
+
+
+
+
+
+
+
+
+
+
+<div class="footers">
+<div>
+     富德生命人寿在法律允许的范围内对本活动拥有最终解释权  
+</div>
+
+</div>
+
+
+
+<div id="guize" style='display: none'>
+  <div class="cloese">
+    <img src="images/close3x.png" alt=""></div>
+
+  <div class="gztitle">活动规则</div>
+
+  <div class="zhuban " style="margin-top: 8vw;">
+    <div class="titless">主办方:</div>
+
+    <div class="zhuban2 pl_10">富德生命人寿保险</div>
+
+  </div>
+
+  <div class="canyu ">
+
+    <div class="titless">参与者:</div>
+
+    <div class="canyu2 mt_5">群主特邀的从未获得天天签到金满贯（从未全月每天签到）的用户</div>
+
+  </div>
+
+  <div class="gzcont ">
+    <div class="titless">规则:</div>
+    <ul class="gzlist">
+      <li>
+        <div class="redb"></div>
+        <div class="listcon">预约报名后，自动开启下个月的体验；</div>
+      </li>
+      <li>
+        <div class="redb"></div>
+        <div class="listcon">如果下个月坚持全月每天签到，即体验成功，可获得特级五常大米一袋（5斤装）；</div>
+
+      </li>
+      <li>
+        <div class="redb"></div>
+        <div class="listcon">
+          如果下个月未能坚持全月每天签到，体验将顺延一个月，多一次机会。如果再下个月仍未能坚持全月每天签到，则体验失败，失去了获得大米的机会；
+        </div>
+      </li>
+      <li>
+        <div class="redb"></div>
+        <div class="listcon">每个人最多只有一次体验机会；</div>
+      </li>
+      <li>
+        <div class="redb"></div>
+        <div class="listcon">体验成功可在当月最后一天签到之后到此活动页填写地址领取，将在10个工作日内包邮</div>
+      </li>
+    </ul>
+
+  </div>
+
+</div>
+
+
+
+
+    </div>
+</body>
+<script type="text/javascript">
+
+$('.guize').on('click',function(){
+//页面层
+layer.open({
+  type: 1,
+   title: false, //不显示标题
+  closeBtn: 0,
+  shadeClose:true, 
+  shade:0.7, 
+/*  skin: 'layui-layer-rim', //加上边框
+  area: ['80vw', '115vw'], //宽高*/
+  content: $('#guize')
+});
+
+});
+
+$('.toset').on('click',function(){
+window.location.href='./set.html'
+});
+
+$('.cloese').on('click',function(){
+
+layer.closeAll();
+});
+
+
+</script>
+</html>

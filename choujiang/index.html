@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>群主福利预约</title>
+    <link rel="stylesheet" href="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+       <link rel="stylesheet" href="layui/css/layui.css">
+    
+      
+    <script src="js/jquery-1.9.1.min.js" type="text/javascript"></script>
+<script src="layer/layer.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="css/my.css">
+</head>
+ 
+
+<body>
+    <div class="indexbg">
+<div class="guize">
+    规<br>则
+</div>
+
+
+   <div class="cont" id="one" >
+       <div class="title">仅高级群主特邀的宝爸妈可参与哦~</div>
+
+       <div class="contimg">
+           <div>
+               <img src="images/shangpin3x.png" alt=""></div>
+
+           <div class="shopcon">
+
+               <div class="shopcon1">
+                   预约后下月签到31天
+                   <br>即可获得五常大米1袋</div>
+               <div class="shopcon2">10月预约名额仅剩</div>
+
+               <div class="shopcon3">
+                   <div>1</div>
+                   <div>0</div>
+                   <div>0</div>
+                   <div>0</div>
+               </div>
+           </div>
+       </div>
+<div class="adds" style="">
+
+
+<!-- 没有权限 nopower --> 
+<!-- 有权限 haspower -->
+<!-- 能报名 canpower -->
+
+<!-- 有权限 -->
+    <div class="yuyue canpower">
+      <span>马上报名预约</span>
+    </div>
+    <!-- 有权限 -->
+   
+<div>
+
+</div>
+</div>
+
+
+
+
+
+
+   </div>
+ 
+
+
+
+
+
+
+
+
+
+
+<div class="footers">
+<div>
+     富德生命人寿在法律允许的范围内对本活动拥有最终解释权  
+</div>
+
+</div>
+
+
+
+
+<div class="alertbg" style="display: none;" id="see">
+
+  <div class="alertbtn tolook">去看看</div>
+
+  <div class="alertcon">
+    你开始给孩子储备未来了吗？
+    <br>
+    数十万宝爸妈已经开通宝贝存钱罐
+    <br>
+    从还在出生起
+    <br>
+    每天加保<span class="c_red">30</span>元，可储备<span  class="c_red">26万+</span>
+    <br>
+    安全稳定，灵活无压力，宝爸妈的首选！
+    <br></div>
+
+  <div class="teyaotitle">只要特邀的用户才可以参与哦~</div>
+
+</div>
+
+
+<div class="alertbg2" style="display: none;" id="iknow">
+
+<div class="alertbtn2  knowbtn">
+我知道了
+</div>
+
+<div class="alertcon">
+<div class="has1">
+     你已经获得过天天签到大满贯<br>
+    不可参与本次初体验哦<br>
+</div>
+
+<div class="has2">
+  真希望那些新参与的用户，也能像你一样<br>
+看到天天签到的有爱有意义~<br>
+</div>
+
+</div>
+
+
+</div>
+
+
+
+<div id="guize" style='display: none'>
+  <div class="cloese">
+    <img src="images/close3x.png" alt=""></div>
+
+  <div class="gztitle">活动规则</div>
+
+  <div class="zhuban " style="margin-top: 8vw;">
+    <div class="titless">主办方:</div>
+
+    <div class="zhuban2 pl_10">富德生命人寿保险</div>
+
+  </div>
+
+  <div class="canyu ">
+
+    <div class="titless">参与者:</div>
+
+    <div class="canyu2 mt_5">群主特邀的从未获得天天签到金满贯（从未全月每天签到）的用户</div>
+
+  </div>
+
+  <div class="gzcont ">
+    <div class="titless">规则:</div>
+    <ul class="gzlist">
+      <li>
+        <div class="redb"></div>
+        <div class="listcon">预约报名后，自动开启下个月的体验；</div>
+      </li>
+      <li>
+        <div class="redb"></div>
+        <div class="listcon">如果下个月坚持全月每天签到，即体验成功，可获得特级五常大米一袋（5斤装）；</div>
+
+      </li>
+      <li>
+        <div class="redb"></div>
+        <div class="listcon">
+          如果下个月未能坚持全月每天签到，体验将顺延一个月，多一次机会。如果再下个月仍未能坚持全月每天签到，则体验失败，失去了获得大米的机会；
+        </div>
+      </li>
+      <li>
+        <div class="redb"></div>
+        <div class="listcon">每个人最多只有一次体验机会；</div>
+      </li>
+      <li>
+        <div class="redb"></div>
+        <div class="listcon">体验成功可在当月最后一天签到之后到此活动页填写地址领取，将在10个工作日内包邮</div>
+      </li>
+    </ul>
+
+  </div>
+
+</div>
+
+
+
+    </div>
+</body>
+<script type="text/javascript">
+  
+  $(function() {
+    console.log(layer);
+
+$('.guize').on('click',function(){
+//页面层
+layer.open({
+  type: 1,
+   title: false, //不显示标题
+  closeBtn: 0,
+  shadeClose:true, 
+  shade:0.7, 
+/*  skin: 'layui-layer-rim', //加上边框
+  area: ['80vw', '115vw'], //宽高*/
+  content: $('#guize')
+});
+
+});
+
+
+
+$('.nopower').on('click',function(){
+//页面层
+layer.open({
+  type: 1,
+   title: false, //不显示标题
+  closeBtn: 0,
+  shadeClose:true, 
+  shade:0.7, 
+/*  skin: 'layui-layer-rim', //加上边框
+  area: ['80vw', '115vw'], //宽高*/
+  content: $('#see')
+});
+
+});
+
+
+$('.haspower').on('click',function(){
+//页面层
+layer.open({
+  type: 1,
+   title: false, //不显示标题
+  closeBtn: 0,
+  shadeClose:true, 
+  shade:0.7, 
+/*  skin: 'layui-layer-rim', //加上边框
+  area: ['80vw', '115vw'], //宽高*/
+  content: $('#iknow')
+});
+
+});
+
+
+$('.cloese').on('click',function(){
+layer.closeAll();
+});
+
+$('.knowbtn').on('click',function(){
+layer.closeAll();
+});
+$('.canpower').on('click',function(){
+window.location.href='./success.html'
+});
+
+$('.tolook').on('click',function(){
+window.location.href='./success.html'
+});
+
+
+
+//页面层
+// layer.open({
+//   type: 1,
+//   skin: 'layui-layer-rim', //加上边框
+//   area: ['420px', '240px'], //宽高
+//   content: $('#one')
+// });
+
+
+  })
+</script>
+</html>
